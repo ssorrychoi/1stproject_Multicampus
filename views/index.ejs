@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LOGIN</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- jquery cdn 넣기 -->
+    <link rel="stylesheet" href="stylesheets/login.css">   <!-- 위에서 만들었던 css 가져오기 -->
+    <script src="javascripts/javascript.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div id="login-form">
+          <%
+              if(loginState){
+          %>
+          <h1>Hello World!<br> Success to login</h1>
+          <button onclick="window.location.href='/about'">Go to HomePage</button>
+          
+          <a href="/" id="logout_btn">Logout</a>
+          <%}else{
+          %>
+
+          <form>
+              <h1>Login</h1>
+              <input id="login_id" type="text" placeholder="ID">
+              <input id="login_pwd" type="password" placeholder="Password"><br>
+              <button id="login_btn" type="submit">Login</button>
+              <div id="signup">
+                  <a href="/signup">Sign up</a>
+              </div>
+            </form>
+          <% }
+          %>
+          
+      </div>
+      </div>
+    </section>
+  </body>
+</html>

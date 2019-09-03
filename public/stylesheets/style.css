@@ -1,0 +1,12 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('../images/passport.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:white; 
+}
+.id{
+background:rgba(255,255,255,0.5);
+}
